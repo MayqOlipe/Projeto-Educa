@@ -28,31 +28,31 @@ public class TurmaAluno {
 		System.out.println("\nDigite aqui a quantidade de alunos: ");
 
 		int numeroAlunos = leia.nextInt();
-				
+		
+		leia.nextLine();		
+		
 		for(int i = 0; i < numeroAlunos; i++) {
 			System.out.println("\nDigite o nome do " + (i+1) + "º Aluno: ");
-			String nome = leia.next();
+			String nome = leia.nextLine();
 			leia.nextLine();
 						
 			System.out.println("Digite o endereço do Aluno: ");
-			String endereco = leia.next();
+			String endereco = leia.nextLine();
 			leia.nextLine();
 						
 			System.out.println("O aluno entregou a atividade? ");
-			String entregaAtividade = leia.next();
+			String entregaAtividade = leia.nextLine();
 			leia.nextLine();
 			
 			System.out.println("Observações: ");
-			String observacoes = leia.next();
-			leia.nextLine();
+			String observacoes = leia.nextLine();
+			
 								
 			alunos.add(new Aluno(nome, endereco, entregaAtividade, observacoes));
 		}
 		
 		for(Aluno al : alunos) {
 			System.out.println(al);
-			
-		leia.close();
 		
 		}
 	}

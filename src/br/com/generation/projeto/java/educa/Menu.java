@@ -19,9 +19,10 @@ public void opcoes() {
         
     	JOptionPane.showMessageDialog(null, "O que você deseja fazer? " + "\n1 - Criar Turma " + "\n2 - Ver Turmas" + "\n3 - Sair");
         
-        int opcao = scan.nextInt();
         
+    	int opcao = scan.nextInt();
         switch(opcao) {
+        
         case 1:
             t.turmaAlunos();
             break;
@@ -35,6 +36,7 @@ public void opcoes() {
         
         case 3:
         	JOptionPane.showMessageDialog(null, "   Programa Encerrado... \nObrigado por usar o Educa!");
+        	scan.close();
             System.exit(0);
         default:
         	JOptionPane.showMessageDialog(null,"   Opção Inválida. \nTente Novamente");

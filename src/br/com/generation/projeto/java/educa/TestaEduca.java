@@ -1,5 +1,7 @@
 package br.com.generation.projeto.java.educa;
 
+
+
 public class TestaEduca {
 
     public static void main(String[] args) {
@@ -9,6 +11,6 @@ public class TestaEduca {
                        
         men.bemvindo();
         log.login();
-        men.opcoes();                    
+        men.opcoes();  
     }    
 }
