@@ -17,9 +17,11 @@ public class TurmaAluno {
 		ArrayList<Aluno> alunos = new ArrayList<>();
 		
 		JOptionPane.showMessageDialog(null,"Qual o Ciclo da Turma?");
+		System.out.println("Digite o Ciclo: ");
         ciclo = leia.nextLine();
         
         JOptionPane.showMessageDialog(null,"Qual o Nome da Turma?");
+        System.out.println("Digite a Turma: ");
         turma = leia.nextLine();
 		
 		JOptionPane.showMessageDialog(null, "Quantos alunos você deseja inserir? ");
